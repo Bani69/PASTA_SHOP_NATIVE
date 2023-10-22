@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     tools:context=".MainActivity3">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +26,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/shrimpprice2"
+                android:id="@+id/productprice"
                 android:layout_width="86dp"
                 android:layout_height="37dp"
                 android:text="₱199"
@@ -35,7 +36,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.802"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/description"
                 app:layout_constraintVertical_bias="0.02" />
 
             <TextView
@@ -49,24 +50,27 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.523"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/description"
                 app:layout_constraintVertical_bias="0.033" />
 
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="236dp"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
                 android:text="Italian Sausage Baked In Fusilli Pasta With Marinara Sauce Topped With Cheddar Cheese And Parsley. Served With Garlic Bread"
+                android:textAlignment="center"
                 android:textColor="#6BF1ECEC"
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/shrimptitle" />
+                app:layout_constraintTop_toBottomOf="@+id/producttitle" />
 
             <TextView
-                android:id="@+id/shrimptitle"
+                android:id="@+id/producttitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
@@ -79,11 +83,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/dfimage"
                 app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/dfimage"
                 android:layout_width="229dp"
                 android:layout_height="180dp"
                 android:layout_marginTop="4dp"
@@ -106,7 +110,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="316dp"
                     android:layout_margin="15dp">
 
                     <androidx.cardview.widget.CardView
@@ -126,6 +130,20 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Solo"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box1"
+                                app:layout_constraintHorizontal_bias="0.3"
+                                app:layout_constraintStart_toEndOf="@+id/imageView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.428" />
+
                             <ImageView
                                 android:id="@+id/imageView"
                                 android:layout_width="45dp"
@@ -136,7 +154,22 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/users" />
+
+                            <CheckBox
+                                android:id="@+id/box1"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
+
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -156,6 +189,35 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="26dp"
+                                android:layout_marginBottom="16dp"
+                                android:text="Platter"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box5"
+                                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <CheckBox
+                                android:id="@+id/box5"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView14" />
 
                             <ImageView
                                 android:id="@+id/imageView14"
@@ -186,12 +248,58 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="40dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="+₱58"
+                                android:textColor="#75F8F8F8"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box8"
+                                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="9dp"
+                                android:layout_marginBottom="16dp"
+                                android:text="Tomatoes"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box8"
+                                app:layout_constraintStart_toEndOf="@+id/imageView16"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <CheckBox
+                                android:id="@+id/box8"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView16" />
+
                             <ImageView
                                 android:id="@+id/imageView16"
                                 android:layout_width="45dp"
                                 android:layout_height="wrap_content"
                                 app:srcCompat="@drawable/tomato"
-                                tools:layout_editor_absoluteX="6dp"
+                                tools:layout_editor_absoluteX="-3dp"
                                 tools:layout_editor_absoluteY="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -212,12 +320,62 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="44dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="+65"
+                                android:textColor="#75F8F8F8"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box3"
+                                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="26dp"
+                                android:layout_marginBottom="16dp"
+                                android:text="Bacon"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box3"
+                                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <CheckBox
+                                android:id="@+id/box3"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:translationY="2dp"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView3" />
+
                             <ImageView
                                 android:id="@+id/imageView3"
                                 android:layout_width="45dp"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="7dp"
-                                app:srcCompat="@drawable/extrabacon" />
+                                app:srcCompat="@drawable/extrabacon"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="0dp" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -238,13 +396,59 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="43dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="+28"
+                                android:textColor="#75F8F8F8"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box2"
+                                app:layout_constraintStart_toEndOf="@+id/imageView"
+                                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fresh Basil"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                android:translationX="5dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box1"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/imageView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.428" />
+
+                            <CheckBox
+                                android:id="@+id/box2"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:translationY="2dp"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView" />
+
                             <ImageView
                                 android:id="@+id/imageView"
                                 android:layout_width="45dp"
                                 android:layout_height="match_parent"
                                 app:srcCompat="@drawable/b"
-                                tools:layout_editor_absoluteX="11dp"
-                                tools:layout_editor_absoluteY="11dp" />
+                                tools:layout_editor_absoluteX="-1dp"
+                                tools:layout_editor_absoluteY="0dp" />
+
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -264,13 +468,60 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="38dp"
+                                android:layout_marginBottom="1dp"
+                                android:text="+₱48"
+                                android:textColor="#75F8F8F8"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box4"
+                                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginEnd="13dp"
+                                android:layout_marginBottom="16dp"
+                                android:text="Pecorino"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box4"
+                                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <CheckBox
+                                android:id="@+id/box4"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:translationY="2dp"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView13" />
+
                             <ImageView
                                 android:id="@+id/imageView13"
                                 android:layout_width="45dp"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="7dp"
                                 app:srcCompat="@drawable/hc"
-                                tools:layout_editor_absoluteX="7dp" />
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -291,12 +542,56 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="31dp"
+                                android:text="+₱38"
+                                android:textColor="#75F8F8F8"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box7"
+                                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="2dp"
+                                android:text="Mushroom"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                android:translationX="3dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box7"
+                                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <CheckBox
+                                android:id="@+id/box7"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="63dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView15" />
+
                             <ImageView
                                 android:id="@+id/imageView15"
                                 android:layout_width="45dp"
                                 android:layout_height="wrap_content"
                                 app:srcCompat="@drawable/mushroom"
-                                tools:layout_editor_absoluteX="7dp" />
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="0dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -318,6 +613,54 @@
                             android:layout_height="match_parent"
                             android:layout_margin="7dp">
 
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginEnd="37dp"
+                                android:text="+₱68"
+                                android:textColor="#75F8F8F8"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box6"
+                                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginTop="14dp"
+                                android:layout_marginEnd="24dp"
+                                android:layout_marginBottom="14dp"
+                                android:text="lemon"
+                                android:textColor="#F1ECEC"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/box6"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <CheckBox
+                                android:id="@+id/box6"
+                                android:layout_width="41dp"
+                                android:layout_height="37dp"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginBottom="12dp"
+                                android:buttonTint="#00E673"
+                                android:gravity="right|end"
+                                android:visibility="visible"
+                                app:buttonIconTint="#0000E673"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                                app:layout_constraintTop_toTopOf="parent" />
+
                             <ImageView
                                 android:id="@+id/imageView14"
                                 android:layout_width="45dp"
@@ -326,7 +669,22 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="86dp"
+                        android:layout_height="37dp"
+                        android:text="₱199"
+                        android:textColor="#00E673"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                        app:layout_constraintVertical_bias="1.0" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.cardview.widget.CardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
