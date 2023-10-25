@@ -17,19 +17,6 @@ class MainActivity : AppCompatActivity() {
         val marinarabtn = findViewById<Button>(R.id.marinarabtn)
         val baconcheesebtn = findViewById<Button>(R.id.baconcheesebtn)
         val carbonarabtn = findViewById<Button>(R.id.carbonarabtn)
-
-         val shrimp=199
-        val  spinach=399
-        val  skilleti=299
-        val  marinara=299
-        val  baconcheese=299
-        val  carbonara=299
-
-
-
-
-
-
         shrimpbtn.setOnClickListener {
 
 
